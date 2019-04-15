@@ -11,6 +11,9 @@
     <button id="replyRender"> 在渲染进程中调用主进程,主进程作出反应 </button>
     <button id="openNewWindow"> 打开新窗口 </button>
     <button id="shellDom"> 通过shell打开外部链接 </button>
+    
+    <!-- 嵌入页面(不拥有渲染进程的权限) -->
+    <webview id="webview" src="https://github.com/GSZS/Gszs-React" style="position:fixed; width:100%; height:100%"></webview>
 
     <i><span style="font-size: 20px; color: lightgreen;" id="receiveRender"></span></i>
 

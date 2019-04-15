@@ -11,10 +11,10 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 let mainWindow;
 
 const createWindow = () => {
-  // 创建一个主浏览器窗口s
+  // 创建一个主浏览器窗口
   require('./ipc/__ipcMain')  // 信道
-  
   require('./shell/menu.js') // 配合webview + shell + menu
+  require('./Tray/tray.js')   // 图标 
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,

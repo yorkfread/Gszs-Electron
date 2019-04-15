@@ -10,8 +10,14 @@
     <button id="ipcRender">在渲染进程中调用主进程的方法</button>
     <button id="replyRender"> 在渲染进程中调用主进程,主进程作出反应 </button>
     <button id="openNewWindow"> 打开新窗口 </button>
+    <button id="shellDom"> 通过shell打开外部链接 </button>
 
     <i><span style="font-size: 20px; color: lightgreen;" id="receiveRender"></span></i>
+
+    <div class="ipc_1">
+      <span>openWindow: </span>
+      <i id="openWindowMsg"></i>
+    </div>
   </body>
 
   <script src="./render/index.js"></script>
@@ -23,4 +29,6 @@
     <script src="./ipc/__ipcRender.js"></script>
     <!-- 渲染进程控制窗口 -->
     <script src="./ipc/__openWindow.js"></script>
+    <!-- shellDom打开外部链接 -->
+    <script src="./shell/shell.js"></script>
 </html>

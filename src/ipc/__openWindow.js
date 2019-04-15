@@ -13,3 +13,7 @@ newWindowObject.onclick = () => {
     ipcRenderer.send('openNewWindow', windowMsg)
     localStorage.setItem('name', 'Gszs') // 储存localStorage
 }
+
+ipcRenderer.on('fromNewJs', (event, data) => {
+    console.log(data)
+}) 

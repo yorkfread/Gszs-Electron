@@ -14,6 +14,7 @@ const createWindow = () => {
   // 创建一个主浏览器窗口s
   require('./ipc/__ipcMain')  // 信道
   
+  require('./shell/menu.js') // 配合webview + shell + menu
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <i>Hello Electron</i>
+    <button id="newWindow"> Open a new Widnow </button>
+    <button id="ipcRender">在渲染进程中调用主进程的方法</button>
+    <button id="replyRender"> 在渲染进程中调用主进程,主进程作出反应 </button>
+    <button id="openNewWindow"> 打开新窗口 </button>
+
+    <i><span style="font-size: 20px; color: lightgreen;" id="receiveRender"></span></i>
+  </body>
+
+  <script src="./render/index.js"></script>
+    <!-- 渲染顶部进程调用Menu , MenuItem模块 -->
+    <script src="./menu/menu.js"></script>
+    <!-- 渲染右键菜单进程 -->
+    <script src="./menu/rightMenu.js"></script>
+    <!-- 通过ipcRender/ipcMain渲染进程执行主进程的方法 -->
+    <script src="./ipc/__ipcRender.js"></script>
+    <!-- 渲染进程控制窗口 -->
+    <script src="./ipc/__openWindow.js"></script>
+</html>

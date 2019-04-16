@@ -12,8 +12,8 @@ let options = {
 
 notificationObj.onclick = () => {
     let Gszs_Notification = new window.Notification(options.title, options);
+    Gszs_Notification.onclick = () => {
+        console.log('关闭')
+    }
 }
 
-Gszs_Notification.onclick = () => {
-    console.log('关闭')
-}

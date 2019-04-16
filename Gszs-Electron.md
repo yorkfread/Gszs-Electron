@@ -14,6 +14,7 @@
     webContents: - 事件发出者,他负责渲染并控制网页,隶属于BrowserWindow对象
     dialog: - dialog系列模块
     Tray: - 系统托盘, 系统托盘右键菜单, 托盘图标闪烁
+    global-shortcut: 注册全局快捷键
 
 ##### 通用模块 : 
     shell模块

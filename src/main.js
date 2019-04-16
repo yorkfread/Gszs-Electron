@@ -1,5 +1,6 @@
 // Electron
 import { app, BrowserWindow } from 'electron';
+require('./shortCut/shortCut.js')  // 注册快捷键
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -13,7 +14,7 @@ let mainWindow;
 const createWindow = () => {
   // 创建一个主浏览器窗口
   require('./ipc/__ipcMain')  // 信道
-  require('./shell/menu.js') // 配合webview + shell + menu
+  require('./shell/menu.js')  // 配合webview + shell + menu
   require('./Tray/tray.js')   // 图标 
   mainWindow = new BrowserWindow({
     width: 800,

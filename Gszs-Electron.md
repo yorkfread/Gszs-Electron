@@ -17,4 +17,7 @@
     global-shortcut: 注册全局快捷键
 
 ##### 通用模块 : 
-    shell模块
+    shell: - 用于与外界交互模块(例如嵌入外部网页,打开外部网页)
+    nativeImage: 模块
+    clipboard: 模块
+    
